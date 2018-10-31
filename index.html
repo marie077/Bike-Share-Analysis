@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<!-- Utilized fullpage.js, googleapis, and Tableau to develop this web app -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Bike Share Analysis</title>
+	<meta name="author" content="Marie Ow" />
+	<meta name="description" content="Web App that analyzes Los Angeles Metro Bike Share data." />
+	<meta name="keywords"  content="fullpage, Bike Share, Data, Analysis" />
+	<meta name="Resource-type" content="Document" />
+  <link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- Navigation bar -->
+<div id="container1">
+  <div class="logo-header">
+    <img class="logo" src="logo.png"/>
+      <button type="button"> <a href="#page1" > <font color="#505050"> Home Page </font> </a> </button>
+      <button type="button"> <a href="#page2"> <font color="#505050"> Duration/Distance Data </font> </a> </button>
+      <button type="button"> <a href="#page3"> <font color="#505050"> Bike Share Stops Data </font> </a> </button>
+      <button type="button"> <a href="#page4"> <font color="#505050"> Trip Route/Passholder Type Data </font> </a> </button>
+ </div>
+</div>
+<!-- Required structure for fullpage.js-->
+<div id="fullpage">
+  <!-- Section 0: Los Angeles Bike Share Data Home Page -->
+  <div class="section active" id="section0" data-anchor="page1">
+    <section>
+      <img src="metroBikeShare.jpg" style="width:1500px;height:550px;"/ >
+      <h1 align="center"> <b> Los Angeles Metro Bike Share Analysis</b> </h1>
+      <p align="center" style="padding-top: 1cm"> Bike Shares are becoming increasingly common! Scroll down to view a Bike Share data analysis! </p>
+    </section>
+  </div>
+  <!-- Section 1: Duration/Distance data -->
+	<div class="section" id="section1" data-anchor="page2">
+    <div class="slide ">
+      <!-- Embedded my Tableau visual 1 -->
+      <div align="center" class='tableauPlaceholder' id='viz1540938634551' style='position: relative'>
+        <noscript>
+          <a href='#'>
+          <img alt=' 'src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet3&#47;1_rss.png' style='border: none'/>
+          </a>
+       </noscript>
+         <object class='tableauViz'  style='display:none;'>
+           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+           <param name='embed_code_version' value='3' />
+           <param name='site_root' value='' />
+           <param name='name' value='BikeShareData_1&#47;Sheet3' />
+           <param name='tabs' value='no' />
+           <param name='toolbar' value='yes' />
+           <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet3&#47;1.png' />
+           <param name='animate_transition' value='yes' />
+           <param name='display_static_image' value='yes' />
+           <param name='display_spinner' value='yes' />
+           <param name='display_overlay' value='yes' />
+           <param name='display_count' value='yes' />
+         </object>
+       </div>
+       <script type='text/javascript'>
+        var divElement = document.getElementById('viz1540938634551');
+         var vizElement = divElement.getElementsByTagName('object')[0];
+         vizElement.style.width='90%';vizElement.style.height=(divElement.offsetWidth*0.40)+'px';
+         var scriptElement = document.createElement('script');
+         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+         vizElement.parentNode.insertBefore(scriptElement, vizElement);
+       </script>
+    </div>
+    <!-- The second slide to section 1-->
+    <div class="slide">
+      <h1> What is the Average Distance Traveled? </h1>
+      <p> The average distance traveled from 2016 to 2017 was 403.70 miles. The most popular month was February 2017. <br> Bikers in total traveled an average of 465.25 miles and 1806.90 seconds!
+        February was definitely a busy month <br> for Metro Bike Share. The weather must have been wonderful in
+        Los Angeles. <br> To view other averages, hover over the bars! </p>
+    </div>
+  </div>
+  <!-- Section 2: Popular Stops Data -->
+	<div class="section" id="section2" data-anchor="page3">
+      <div class="slide ">
+        <!-- Tableau Embedded Visual 2 -->
+        <div align="center"class='tableauPlaceholder' id='viz1540941099763' style='position:relative'>
+          <noscript>
+            <a href='#'>
+              <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet1&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='BikeShareData_1&#47;Sheet1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='filter' value='publish=yes' />
+         </object>
+       </div>
+       <script type='text/javascript'>
+       var divElement = document.getElementById('viz1540941099763');
+       var vizElement = divElement.getElementsByTagName('object')[0];
+       vizElement.style.width='90%';vizElement.style.height=(divElement.offsetWidth*0.40)+'px';
+       var scriptElement = document.createElement('script');
+       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+       vizElement.parentNode.insertBefore(scriptElement, vizElement);
+     </script>
+   </div>
+   <!--Second slide of Section 2-->
+   <div class="slide">
+     <h1>Which Bike Share Stop is the Most Popular?</h1>
+     <p> Stop 3082 is the most popular stop. It is located near the center of Los Angeles.<br> Other popular stops
+       are 3014, 3069, 3031, and 3064. <br> Each of the stops received 2000 to 3000 visitors from 2016 to 2017! Wow! </p>
+   </div>
+  </div>
+  <!--Section 3: Route type/pasholder type data -->
+	<div class="section" id="section3" data-anchor="page4">
+    <div class="slide ">
+    <!-- Tableau embedded visual 3-->
+        <div align="center"  class='tableauPlaceholder' id='viz1540941331442' style='position: relative'>
+          <noscript>
+            <a href='#'>
+            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet2&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+             <param name='embed_code_version' value='3' />
+             <param name='site_root' value='' />
+             <param name='name' value='BikeShareData_1&#47;Sheet2' />
+             <param name='tabs' value='no' />
+             <param name='toolbar' value='yes' />
+             <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet2&#47;1.png' />
+             <param name='animate_transition' value='yes' />
+             <param name='display_static_image' value='yes' />
+             <param name='display_spinner' value='yes' />
+             <param name='display_overlay' value='yes' />
+             <param name='display_count' value='yes' />
+             <param name='filter' value='publish=yes' />
+           </object>
+       </div>
+       <script type='text/javascript'>
+          var divElement = document.getElementById('viz1540941331442');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='90%';vizElement.style.height=(divElement.offsetWidth*0.40)+'px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
+  <!--First slide to section 3-->
+  <div class="slide">
+    <!--Tableau visual embedded -->
+    <div align="center" class='tableauPlaceholder' id='viz1540943948559' style='position:relative'>
+      <noscript>
+        <a href='#'>
+          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet4&#47;1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='BikeShareData_1&#47;Sheet4' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;BikeShareData_1&#47;Sheet4&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1540943948559');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width='90%';vizElement.style.height=(divElement.offsetWidth*0.40)+'px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+   </script>
+ </div>
+  <!-- Second slide of Section3 -->
+    <div class="slide">
+      <h1> How Does Ridership Change with Seasons?</h1>
+      <p> During the Winter, regular commuters decline from approximately 10,000 riders to
+        6000 riders—most likely because <br> of the cold weather. On the contrary, Bike Share is
+        popular during Summer months. Regarding trip route/passholder types,<br> Monthly and Flex passes are popular
+        during warmer months and not popular during colder months as well! </p>
+      <h1 style="padding-top: 1cm"> What Might Make a Particular Trip Route/Passholder Type Popular? </h1>
+      <p> Considering the popularity of One Way routes and Monthly Passes, their combination is the most popular among riders. <br>
+        Perhaps, this is the most popular because as a regular commuter, an individual would use Bike Share <br> to commute to work directly instead
+        of bike back to his or her starting stop! </p>
+    </div>
+  </div>
+</div>
+<!--link to fullpage.js file-->
+<script type="text/javascript" src="fullpage.js"></script>
+<!-- Initalization with Vanilla JavaScript -->
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+	sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+  licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  anchors:['page1', 'page2', 'page3','page4']
+});
+</script>
+<!-- Footer that shows credibility -->
+<div id="footer">
+  <h3> <font color="#505050"> Developed by: Marie Ow </font> </h3>
+</div>
+</body>
+</html>
